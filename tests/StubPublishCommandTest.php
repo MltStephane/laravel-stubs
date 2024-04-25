@@ -9,7 +9,7 @@ it('can publish stubs', function () {
 
     File::deleteDirectory($targetStubsPath);
 
-    $this->artisan('spatie-stub:publish')->assertExitCode(0);
+    $this->artisan('stub:publish-opinionated')->assertExitCode(0);
 
     $stubPath = __DIR__ . '/../stubs/migration.stub';
 

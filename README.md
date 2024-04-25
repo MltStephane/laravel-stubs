@@ -1,35 +1,11 @@
 # Opinionated Laravel stubs
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-stubs.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-stubs)
-[![run-tests](https://github.com/spatie/laravel-stubs/actions/workflows/run-tests.yml/badge.svg)](https://github.com/spatie/laravel-stubs/actions/workflows/run-tests.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-stubs.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-stubs)
-
-This repo contains opinionated versions of the Laravel stubs. The most notable changes are:
-
-- migrations don't have a `down` function
-- controllers don't extend a base controller
-- none of the model attributes are guarded
-- use return type hints where possible
-- most docblocks have been removed
-
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-stubs.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-stubs)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
-
-## Exploring laravel-stubs
-
-In this [video on YouTube](https://www.youtube.com/watch?v=I-y-VSOL93I), Povilas Korop explores our package.
-
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require spatie/laravel-stubs --dev
+composer require mltstephane/laravel-stubs --dev
 ```
 
 If you want to keep your stubs up to date with every update, add this composer hook to your composer.json file:
@@ -37,7 +13,7 @@ If you want to keep your stubs up to date with every update, add this composer h
 ```json
 "scripts": {
     "post-update-cmd": [
-        "@php artisan spatie-stub:publish --force"
+        "@php artisan stub:publish-opinionated --force"
     ]
 }
 ```
@@ -47,7 +23,7 @@ If you want to keep your stubs up to date with every update, add this composer h
 You can publish the stubs using this command:
 
 ```bash
-php artisan spatie-stub:publish
+php artisan stub:publish-opinionated
 ```
 
 ## Testing
@@ -55,18 +31,6 @@ php artisan spatie-stub:publish
 ``` bash
 composer test
 ```
-
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](https://github.com/spatie/.github/blob/main/CONTRIBUTING.md) for details.
-
-## Security
-
-If you've found a bug regarding security please mail [security@spatie.be](mailto:security@spatie.be) instead of using the issue tracker.
 
 ## Credits
 
