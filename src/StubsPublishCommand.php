@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Stubs;
+namespace MltStephane\Stubs;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;

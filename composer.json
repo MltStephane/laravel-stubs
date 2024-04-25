@@ -1,17 +1,23 @@
 {
-    "name": "spatie/laravel-stubs",
+    "name": "mltstephane/laravel-stubs",
     "description": "Opinionated Laravel stubs",
     "keywords": [
         "spatie",
         "laravel-stubs"
     ],
-    "homepage": "https://github.com/spatie/laravel-stubs",
+    "homepage": "https://github.com/mltstephane/laravel-stubs",
     "license": "MIT",
     "authors": [
         {
             "name": "Freek Van der Herten",
             "email": "freek@spatie.be",
             "homepage": "https://spatie.be",
+            "role": "Developer"
+        },
+        {
+            "name": "Stephane MULOT",
+            "email": "stephane@mulot.dev",
+            "homepage": "https://stephane.mulot.dev",
             "role": "Developer"
         }
     ],
@@ -26,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Stubs\\": "src"
+            "MltStephane\\Stubs\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Stubs\\Tests\\": "tests"
+            "MltStephane\\Stubs\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -48,7 +54,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Stubs\\StubsServiceProvider"
+                "MltStephane\\Stubs\\StubsServiceProvider"
             ]
         }
     },
